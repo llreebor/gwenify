@@ -23,6 +23,9 @@
 	.btn.btn-white {
 		@apply bg-white py-[10px] px-[28px] font-bold text-[#464444] transition-colors hover:border-slate-500 hover:bg-slate-800 hover:text-white;
 	}
+	.btn.section-btn {
+		@apply max-w-fit border-[#55565B] bg-[rgba(255,255,255,0.06)] py-4 px-20 font-semibold text-white  hover:bg-[rgba(255,255,255,0.2)] sm:max-w-full sm:text-center;
+	}
 	/* Fixed Header */
 	.fixed-header {
 		@apply fixed left-0 !top-0 z-20 w-full bg-slate-800/70 shadow-[0px_4px_61px_0px_rgba(0,0,0,0.15)] transition-all;
@@ -34,16 +37,16 @@
 
 	/* Section */
 	.section {
-		@apply flex min-h-screen flex-col items-center  py-20 md:py-14 sm:py-10;
+		@apply flex min-h-screen flex-col items-center py-20 md:py-14 sm:py-10;
 	}
 
 	/* Menu Link */
 	.menu-link {
-		@apply relative text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:scale-0 after:bg-white after:transition-all hover:after:scale-100;
+		@apply relative font-poppins text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:scale-0 after:bg-white after:transition-all hover:after:scale-100;
 	}
 	/* Section Title */
 	.section-title {
-		@apply text-[88px] font-bold uppercase leading-none tracking-[5.28px] text-[#EFEEEE];
+		@apply text-[88px] font-bold uppercase leading-none tracking-[5.28px] text-[#EFEEEE] sm:text-4xl;
 	}
 	/* Section Text */
 	.section-text {

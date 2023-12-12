@@ -38,6 +38,8 @@ module.exports = {
 			backgroundImage: {
 				'automate-gradient':
 					'linear-gradient(166deg, rgba(4, 26, 50, 0.99) 4.86%, rgba(12, 18, 24, 0.99) 104.78%)',
+				'teams-gradient':
+					'linear-gradient(0deg,rgba(45, 19, 37, 0.2) 0%,rgba(45, 19, 37, 0.2) 100%),linear-gradient(166deg,rgba(23, 14, 25, 0.99) 4.86%,rgba(12, 18, 24, 0.99) 104.78%)',
 			},
 		},
 	},
