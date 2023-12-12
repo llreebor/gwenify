@@ -8,7 +8,7 @@ module.exports = {
 			lg: { max: '1199.99px' },
 			md: { max: '991.99px' },
 			sm: { max: '767.99px' },
-			xs: { max: '479.99px' },
+			xs: { max: '374.99px' },
 		},
 		container: {
 			center: true,
@@ -34,6 +34,10 @@ module.exports = {
 			},
 			animation: {
 				fadeIn: 'fade-in .3s ease',
+			},
+			backgroundImage: {
+				'automate-gradient':
+					'linear-gradient(166deg, rgba(4, 26, 50, 0.99) 4.86%, rgba(12, 18, 24, 0.99) 104.78%)',
 			},
 		},
 	},

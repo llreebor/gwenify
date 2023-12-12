@@ -9,12 +9,9 @@
 	body {
 		@apply relative font-redhat;
 	}
-	section {
-		@apply py-20 md:py-14 sm:py-10;
-	}
 
 	h1 {
-		@apply text-3xl font-medium;
+		@apply text-[110px] font-bold uppercase leading-[1.1] tracking-[6.6px] text-white sm:text-center sm:text-[69px] xs:text-5xl;
 	}
 }
 
@@ -32,7 +29,12 @@
 	}
 	/* Mobile Menu */
 	.mobile-menu {
-		@apply fixed -right-full top-0 bottom-0 z-20  flex h-screen w-full justify-end overflow-auto transition-all;
+		@apply fixed -right-full top-0 bottom-0 z-20  flex h-screen w-full justify-end overflow-auto  transition-all;
+	}
+
+	/* Section */
+	.section {
+		@apply flex min-h-screen flex-col items-center  py-20 md:py-14 sm:py-10;
 	}
 
 	/* Menu Link */
@@ -41,6 +43,10 @@
 	}
 	/* Section Title */
 	.section-title {
-		@apply text-3xl font-semibold leading-normal text-black md:text-2xl  sm:text-xl;
+		@apply text-[88px] font-bold uppercase leading-none tracking-[5.28px] text-[#EFEEEE];
+	}
+	/* Section Text */
+	.section-text {
+		@apply leading-[1.7] text-[#C7CAD9];
 	}
 }

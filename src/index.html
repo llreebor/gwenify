@@ -14,10 +14,10 @@
 		<link rel="stylesheet" href="./css/output.css" />
 	</head>
 
-	<body class="h-[5000px]">
+	<body class="h-full">
 		<div class="wrapper flex min-h-full flex-col">
 			<div
-				class="h-full min-h-screen w-full bg-[url('../img/hero-bg.jpg')] bg-cover bg-center"
+				class="flex h-full min-h-screen w-full flex-col bg-[url('../img/hero-bg.jpg')] bg-cover bg-center bg-no-repeat sm:relative sm:after:absolute sm:after:inset-0 sm:after:z-0 sm:after:bg-black/10 sm:after:backdrop-blur-[2px]"
 			>
 				<!-- Header -->
 				<header id="header" class="group">
@@ -52,9 +52,9 @@
 							</ul>
 
 							<!-- Mobile Menu -->
-							<div id="mobile-menu" class="mobile-menu">
+							<div id="mobile-menu" class="mobile-menu z-50">
 								<ul
-									class="flex h-full w-2/3 flex-col items-center justify-center gap-[86px] bg-white bg-transparent py-10 group-[.dark]:bg-slate-800 group-[.dark]:text-white"
+									class="flex h-full w-2/3 flex-col items-center justify-center gap-[86px] bg-white bg-transparent py-10 shadow-[-17px_-10px_23.8px_0px_rgba(0,0,0,0.25)] group-[.dark]:bg-slate-800 group-[.dark]:text-white"
 								>
 									<li>
 										<a href="#header" class="font-bold">Home</a>
@@ -76,7 +76,7 @@
 							<!-- Burger Button -->
 							<button
 								id="burger"
-								class="group relative z-20 hidden h-5 w-[30px] sm:block"
+								class="group relative z-50 hidden h-5 w-[30px] sm:block"
 							>
 								<span
 									class="absolute left-0 top-0 flex h-[2px] w-[30px] bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45 group-[.active]:bg-black group-[.dark]:bg-white"
@@ -92,11 +92,47 @@
 					</div>
 				</header>
 
-				<section id="hero"></section>
+				<section id="hero" class="flex flex-1 flex-col">
+					<div class="container flex h-full flex-1 flex-col">
+						<div
+							class="z-10 mt-[90px] flex w-full max-w-[600px] flex-col gap-4 pb-10 sm:mt-[30px] sm:h-full sm:max-w-full sm:flex-auto"
+						>
+							<h1>Reduce manual work</h1>
+							<p class="text-[26px] leading-normal text-white sm:text-center">
+								Streamline Operations and Elevate Experiences
+							</p>
+							<a
+								href="#"
+								class="btn btn-white z-10 hidden font-poppins sm:mt-auto sm:flex sm:justify-center"
+							>
+								Contact Us
+							</a>
+						</div>
+					</div>
+				</section>
 			</div>
 
 			<!-- Main Content -->
-			<main class="flex-auto"></main>
+			<main class="flex-auto">
+				<!-- Section Automate -->
+				<section
+					class="section flex h-full flex-col items-center justify-center bg-[#0F1320] bg-cover bg-center"
+				>
+					<div class="container grid h-full grid-cols-2">
+						<div class="flex flex-col gap-[15px]">
+							<h2 class="section-title">Automate Processes</h2>
+							<p class="section-text">
+								Experience seamless efficiency with Robotic Process Automation.
+								Automate routine tasks, improve accuracy and accelerate
+								processes. Free your team to focus on innovation while reducing
+								costs. Boost productivity, customer satisfaction and transform
+								your operations.
+							</p>
+							<a href="#" class="btn section-btn">Next</a>
+						</div>
+					</div>
+				</section>
+			</main>
 
 			<!-- Footer -->
 			<!-- <footer class="flex h-40 items-center justify-center bg-slate-300">
