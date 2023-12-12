@@ -33,8 +33,8 @@
 							>
 								<!-- Menu Item -->
 								<li>
-									<a class="menu-link" href="#">
-										<span>About</span>
+									<a class="menu-link" href="#about-section">
+										<span>About Us</span>
 									</a>
 								</li>
 								<!-- Menu Item -->
@@ -43,10 +43,11 @@
 										<span>Services</span>
 									</a>
 								</li>
+
 								<!-- Menu Item -->
 								<li>
 									<a class="menu-link" href="#">
-										<span>About Us</span>
+										<span>Gwen</span>
 									</a>
 								</li>
 							</ul>
@@ -57,13 +58,13 @@
 									class="flex h-full w-2/3 flex-col items-center justify-center gap-[86px] bg-white bg-transparent py-10 shadow-[-17px_-10px_23.8px_0px_rgba(0,0,0,0.25)] group-[.dark]:bg-slate-800 group-[.dark]:text-white"
 								>
 									<li>
-										<a href="#header" class="font-bold">Home</a>
+										<a href="#header" class="font-bold">About</a>
 									</li>
 									<li>
-										<a href="#about" class="font-bold">Capabilities</a>
+										<a href="#about" class="font-bold">Services</a>
 									</li>
 									<li>
-										<a href="#expertise" class="font-bold">Expertise</a>
+										<a href="#expertise" class="font-bold">Gwen</a>
 									</li>
 								</ul>
 							</div>
@@ -79,13 +80,13 @@
 								class="group relative z-50 hidden h-5 w-[30px] sm:block"
 							>
 								<span
-									class="absolute left-0 top-0 flex h-[2px] w-[30px] bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45 group-[.active]:bg-black group-[.dark]:bg-white"
+									class="absolute left-0 top-0 flex h-[2px] w-[30px] rounded bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45 group-[.active]:bg-black group-[.dark]:bg-white"
 								></span>
 								<span
-									class="absolute left-0 top-1/2 flex h-[2px] w-[30px] translate-x-0 -translate-y-1/2 bg-white transition-transform group-[.active]:opacity-0"
+									class="absolute left-0 top-1/2 flex h-[2px] w-[30px] translate-x-0 -translate-y-1/2 rounded bg-white transition-transform group-[.active]:opacity-0"
 								></span>
 								<span
-									class="absolute left-0 bottom-0 flex h-[2px] w-[30px] bg-white transition-transform group-[.active]:-translate-y-[10px] group-[.active]:-rotate-45 group-[.active]:bg-black group-[.dark]:bg-white"
+									class="absolute left-0 bottom-0 flex h-[2px] w-[30px] rounded bg-white transition-transform group-[.active]:-translate-y-[10px] group-[.active]:-rotate-45 group-[.active]:bg-black group-[.dark]:bg-white"
 								></span>
 							</button>
 						</div>
@@ -102,8 +103,8 @@
 								Streamline Operations and Elevate Experiences
 							</p>
 							<a
-								href="#"
-								class="btn btn-white z-10 hidden font-poppins sm:mt-auto sm:flex sm:justify-center"
+								href="#chat-section"
+								class="btn btn-white z-10 hidden sm:mt-auto sm:flex sm:justify-center"
 							>
 								Contact Us
 							</a>
@@ -116,6 +117,7 @@
 			<main class="flex-auto">
 				<!-- Section Automate -->
 				<section
+					id="automate-section"
 					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0F1320] bg-cover bg-center md:pt-0"
 				>
 					<img
@@ -138,13 +140,14 @@
 								costs. Boost productivity, customer satisfaction and transform
 								your operations.
 							</p>
-							<a href="#" class="btn section-btn">Next</a>
+							<a href="#teams-section" class="btn section-btn">Next</a>
 						</div>
 					</div>
 				</section>
 
 				<!-- Section Teams-->
 				<section
+					id="teams-section"
 					class="section asd relative flex h-full flex-col items-center justify-center overflow-hidden bg-teams-gradient bg-cover bg-center md:pt-0"
 				>
 					<img
@@ -168,13 +171,14 @@
 								With streamlined processes, teams can collaborate more
 								effectively, make data-driven decisions and drive improvement.
 							</p>
-							<a href="#" class="btn section-btn">Next</a>
+							<a href="#error-section" class="btn section-btn">Next</a>
 						</div>
 					</div>
 				</section>
 
-				<!-- Section Errors -->
+				<!-- Section Error -->
 				<section
+					id="error-section"
 					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center sm:pt-0"
 				>
 					<img
@@ -199,13 +203,14 @@
 								outcomes. Elevate your processes and deliver consistent
 								error-free results
 							</p>
-							<a href="#" class="btn section-btn">Next</a>
+							<a href="#about-section" class="btn section-btn">Next</a>
 						</div>
 					</div>
 				</section>
 
 				<!-- Sections Partners -->
 				<section
+					id="partner-section"
 					class="bg-[rgba(105,61,83,0.10)] p-20 sm:bg-transparent sm:pt-0"
 				>
 					<div class="container">
@@ -224,12 +229,195 @@
 						</div>
 					</div>
 				</section>
+
+				<!-- Section About -->
+				<section
+					id="about-section"
+					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#08141D] bg-cover bg-center sm:pt-0"
+				>
+					<img
+						class="absolute right-0 top-0 mix-blend-lighten sm:top-1/2 sm:-translate-y-1/2"
+						src="./img/about.png"
+						alt="img"
+					/>
+
+					<div
+						class="container z-10 mx-auto flex h-full w-full max-w-[963px] flex-col sm:mt-[30px]"
+					>
+						<div class="flex flex-col items-center gap-[30px]">
+							<img src="./img/about-logo.png" alt="about logo" />
+							<h2 class="section-title">About US</h2>
+							<p class="section-text text-center">
+								Since 2014, we’ve been working hard to automate repetitive tests
+								and tasks through our open source Gwen project.
+							</p>
+							<p class="section-text text-center">
+								Matured and evolved over many years, we now use Gwen to reliably
+								automate business processes and free teams from the work of
+								robots. Our innovative solutions utilise cloud technologies to
+								execute routine tasks at scale, revolutionising your workflow.
+								Our ongoing support to clients is exceptional.
+							</p>
+							<a
+								href="#"
+								target="_blank"
+								class="btn section-btn text-center sm:w-full"
+							>
+								Sponsor our Open Source work
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section Сhat -->
+				<section
+					id="chat-section"
+					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center sm:pt-0"
+				>
+					<div
+						class="container z-10 grid h-full grid-cols-2 items-center gap-20 md:grid-cols-1 md:gap-10"
+					>
+						<div class="overflow-hidden rounded-[34px]">
+							<img
+								class="h-auto w-full max-w-full"
+								src="./img/chat.jpg"
+								alt="chat-img"
+							/>
+						</div>
+						<div class="flex flex-col gap-6">
+							<h2 class="section-title">Let’s Chat</h2>
+							<p class="section-text">
+								Ready to transform your business with automation tailored to
+								your unique needs? Schedule a complimentary introductory call
+								today, and let's delve into your specific requirements.
+							</p>
+							<p class="section-text">
+								Our team is keen to understand your challenges, explore
+								opportunities, and design a customized automation solution just
+								for you.
+							</p>
+							<a
+								href="#"
+								class="btn btn-white max-w-fit !px-20 sm:max-w-full sm:text-center"
+							>
+								Book a call
+							</a>
+						</div>
+					</div>
+				</section>
 			</main>
 
 			<!-- Footer -->
-			<!-- <footer class="flex h-40 items-center justify-center bg-slate-300">
-				FOOTER
-			</footer> -->
+			<footer class="bg-[#070F15]">
+				<div class="container">
+					<div class="grid grid-cols-3 gap-5 py-12 sm:grid-cols-1 sm:gap-12">
+						<div class="sm:flex sm:flex-col sm:items-center">
+							<a href="#"><img src="./img/logo.png" alt="logo footer" /></a>
+							<ul class="mt-1 flex items-center gap-3 sm:mt-0">
+								<li>
+									<a
+										class="group flex h-[50px] w-[50px] items-center justify-center p-3"
+										href="#"
+									>
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												class="transition-colors group-hover:fill-white"
+												d="M6.94043 5.00002C6.94017 5.53046 6.7292 6.03906 6.35394 6.41394C5.97868 6.78883 5.46986 6.99929 4.93943 6.99902C4.409 6.99876 3.90039 6.78779 3.52551 6.41253C3.15062 6.03727 2.94016 5.52846 2.94043 4.99802C2.9407 4.46759 3.15166 3.95899 3.52692 3.5841C3.90218 3.20922 4.411 2.99876 4.94143 2.99902C5.47186 2.99929 5.98047 3.21026 6.35535 3.58552C6.73024 3.96078 6.9407 4.46959 6.94043 5.00002ZM7.00043 8.48002H3.00043V21H7.00043V8.48002ZM13.3204 8.48002H9.34043V21H13.2804V14.43C13.2804 10.77 18.0504 10.43 18.0504 14.43V21H22.0004V13.07C22.0004 6.90002 14.9404 7.13002 13.2804 10.16L13.3204 8.48002Z"
+												fill="#757A90"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a
+										class="group flex h-[50px] w-[50px] items-center justify-center p-3"
+										href="#"
+									>
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												class="transition-colors group-hover:fill-white"
+												d="M13.5222 10.775L19.4785 4H18.0669L12.8952 9.8825L8.76444 4H4L10.2466 12.8955L4 20H5.4116L10.8733 13.7879L15.2356 20H20L13.5218 10.775H13.5222ZM11.5889 12.9738L10.9559 12.088L5.92016 5.03975H8.08827L12.152 10.728L12.7849 11.6137L18.0676 19.0075H15.8997L11.5889 12.9741V12.9738Z"
+												fill="#757A90"
+											/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sm:flex sm:flex-col sm:items-center">
+							<p class="mt-4 text-xl font-bold text-[#EFEEEE] sm:mt-0">Links</p>
+
+							<ul class="mt-5 flex flex-col gap-4 sm:items-center">
+								<li>
+									<a
+										class="text-[#757A90] transition-colors hover:text-white"
+										href="#"
+									>
+										Home
+									</a>
+								</li>
+								<li>
+									<a
+										class="text-[#757A90] transition-colors hover:text-white"
+										href="#"
+									>
+										About us
+									</a>
+								</li>
+								<li>
+									<a
+										class="text-[#757A90] transition-colors hover:text-white"
+										href="#"
+									>
+										Gwen project
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sm:flex sm:flex-col sm:items-center">
+							<p class="mt-4 text-xl font-bold text-[#EFEEEE] sm:mt-0">
+								Location
+							</p>
+							<a class="mt-5 flex gap-1 text-[#757A90] sm:gap-4" href="#">
+								<svg
+									class="mt-[3px] shrink-0"
+									width="18"
+									height="19"
+									viewBox="0 0 18 19"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9 1.25C10.7902 1.25 12.5071 1.96116 13.773 3.22703C15.0388 4.4929 15.75 6.20979 15.75 8C15.75 10.7945 13.62 13.7225 9.45 16.85C9.32018 16.9474 9.16228 17 9 17C8.83772 17 8.67982 16.9474 8.55 16.85C4.38 13.7225 2.25 10.7945 2.25 8C2.25 6.20979 2.96116 4.4929 4.22703 3.22703C5.4929 1.96116 7.20979 1.25 9 1.25ZM9 5.75C8.40326 5.75 7.83097 5.98705 7.40901 6.40901C6.98705 6.83097 6.75 7.40326 6.75 8C6.75 8.59674 6.98705 9.16903 7.40901 9.59099C7.83097 10.0129 8.40326 10.25 9 10.25C9.59674 10.25 10.169 10.0129 10.591 9.59099C11.0129 9.16903 11.25 8.59674 11.25 8C11.25 7.40326 11.0129 6.83097 10.591 6.40901C10.169 5.98705 9.59674 5.75 9 5.75Z"
+										fill="#757A90"
+									/>
+								</svg>
+
+								<span>Level 17, 31 Queen Street, Melbourne, VIC 3000</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Copy -->
+				<div
+					class="border-t border-t-[#20272C] py-6 text-center font-medium text-[#2C3338]"
+				>
+					Copyright 2023 - Gwenify Pty. Ltd.
+				</div>
+			</footer>
 		</div>
 
 		<!-- JS -->

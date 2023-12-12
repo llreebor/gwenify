@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		scroll-behavior: smooth;
+	}
 	.container {
 		@apply max-w-[1230px];
 	}
@@ -24,7 +27,7 @@
 		@apply bg-white py-[10px] px-[28px] font-bold text-[#464444] transition-colors hover:border-slate-500 hover:bg-slate-800 hover:text-white;
 	}
 	.btn.section-btn {
-		@apply max-w-fit border-[#55565B] bg-[rgba(255,255,255,0.06)] py-4 px-20 font-semibold text-white  hover:bg-[rgba(255,255,255,0.2)] sm:max-w-full sm:text-center;
+		@apply max-w-fit border-[#55565B] bg-[rgba(255,255,255,0.06)] py-4 px-20 font-semibold text-white  hover:bg-[rgba(255,255,255,0.2)] sm:max-w-full sm:px-9 sm:text-center;
 	}
 	/* Fixed Header */
 	.fixed-header {
