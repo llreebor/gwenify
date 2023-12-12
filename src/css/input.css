@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.container {
+		@apply max-w-[1230px];
+	}
+	body {
+		@apply relative font-redhat;
+	}
+	section {
+		@apply py-20 md:py-14 sm:py-10;
+	}
+
+	h1 {
+		@apply text-3xl font-medium;
+	}
+}
+
+@layer components {
+	/* Button */
+	.btn {
+		@apply inline-block rounded-[20px] border border-transparent;
+	}
+	.btn.btn-white {
+		@apply bg-white py-[10px] px-[28px] font-bold text-[#464444] transition-colors hover:border-slate-500 hover:bg-slate-800 hover:text-white;
+	}
+	/* Fixed Header */
+	.fixed-header {
+		@apply fixed left-0 !top-0 z-20 w-full bg-slate-800/70 shadow-[0px_4px_61px_0px_rgba(0,0,0,0.15)] transition-all;
+	}
+	/* Mobile Menu */
+	.mobile-menu {
+		@apply fixed -right-full top-0 bottom-0 z-20  flex h-screen w-full justify-end overflow-auto transition-all;
+	}
+
+	/* Menu Link */
+	.menu-link {
+		@apply relative text-white after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:scale-0 after:bg-white after:transition-all hover:after:scale-100;
+	}
+	/* Section Title */
+	.section-title {
+		@apply text-3xl font-semibold leading-normal text-black md:text-2xl  sm:text-xl;
+	}
+}
