@@ -999,6 +999,10 @@ h1 {
   margin-top: 90px;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -1082,6 +1086,10 @@ h1 {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[1100px\] {
+  max-width: 1100px;
 }
 
 .flex-1 {
@@ -1211,6 +1219,10 @@ h1 {
 
 .gap-\[86px\] {
   gap: 86px;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .overflow-hidden {
@@ -1391,16 +1403,8 @@ h1 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline-offset-4 {
-  text-underline-offset: 4px;
-}
-
 .underline-offset-8 {
   text-underline-offset: 8px;
-}
-
-.underline-offset-\[7px\] {
-  text-underline-offset: 7px;
 }
 
 .mix-blend-lighten {
@@ -1488,10 +1492,6 @@ h1 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.group.active .group-\[\.active\]\:font-bold {
-  font-weight: 700;
-}
-
 .group.dark .group-\[\.dark\]\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1518,6 +1518,10 @@ h1 {
 
   .lg\:max-w-\[900px\] {
     max-width: 900px;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
   .lg\:text-red-300 {
@@ -1586,6 +1590,10 @@ h1 {
 
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-col {
