@@ -1449,6 +1449,19 @@ h1 {
   .hero-nav-btn {
     bottom: 2.5rem !important;
   }
+
+  .btn.section-btn {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: -moz-fit-content !important;
+    max-width: fit-content !important;
+  }
+
+  .landscape-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+  }
 }
 
 .hover\:text-white:hover {
@@ -1576,10 +1589,6 @@ h1 {
 
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:max-w-full {

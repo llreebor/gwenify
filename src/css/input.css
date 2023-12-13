@@ -71,4 +71,10 @@
 	.hero-nav-btn {
 		@apply !bottom-10;
 	}
+	.btn.section-btn {
+		@apply !mx-auto !max-w-fit;
+	}
+	.landscape-image {
+		@apply mx-auto max-w-[200px];
+	}
 }
