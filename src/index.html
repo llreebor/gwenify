@@ -39,19 +39,21 @@
 				<!-- Header -->
 				<header id="header" class="dark group z-50">
 					<div class="container">
-						<div class="grid grid-cols-3 items-center py-3 md:grid-cols-2">
+						<div class="flex items-center gap-10 py-3">
 							<a href=" #" class="z-20 flex">
 								<img src="./img/logo.png" alt="logo image" />
 							</a>
 							<!-- Desktop menu -->
 							<ul
 								id="menu"
-								class="z-10 mx-auto flex animate-fadeIn items-center gap-14 lg:gap-12 lg:text-red-300 md:hidden md:flex-col md:items-center md:justify-center md:gap-10"
+								class="z-10 ml-auto flex w-full flex-1 animate-fadeIn items-center justify-end gap-14 lg:gap-12 lg:text-red-300 md:hidden md:flex-col md:items-center md:justify-center md:gap-10"
 							>
 								<!-- Menu Item -->
 								<li>
 									<a class="menu-link group" href="#hero">
-										<span class="underline-offset-8 group-[.active]:underline">
+										<span
+											class="underline-offset-8 group-[.active]:text-orange-400"
+										>
 											Home
 										</span>
 									</a>
@@ -59,7 +61,9 @@
 								<!-- Menu Item -->
 								<li>
 									<a class="menu-link group" href="#automate-section">
-										<span class="underline-offset-8 group-[.active]:underline">
+										<span
+											class="underline-offset-8 group-[.active]:text-orange-400"
+										>
 											Automation
 										</span>
 									</a>
@@ -67,7 +71,9 @@
 								<!-- Menu Item -->
 								<li>
 									<a class="menu-link group" href="#about-section">
-										<span class="underline-offset-8 group-[.active]:underline">
+										<span
+											class="underline-offset-8 group-[.active]:text-orange-400"
+										>
 											About Us
 										</span>
 									</a>
@@ -170,12 +176,17 @@
 					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0F1320] bg-cover bg-center md:pt-0"
 				>
 					<img
-						class="absolute right-0 bottom-0 z-0 h-auto w-full max-w-[1100px] object-cover mix-blend-lighten md:hidden"
+						class="automate-landscape-image"
+						src="./img/landscape-process.png"
+						alt="img"
+					/>
+					<img
+						class="automate-desktop-image"
 						src="./img/process-image.png"
 						alt="process img"
 					/>
 					<img
-						class="landscape-image hidden h-auto w-full max-w-full mix-blend-lighten md:block"
+						class="automate-mobile-image"
 						src="./img/process-image-mob.png"
 						alt="process img"
 					/>
@@ -218,13 +229,14 @@
 					id="teams-section"
 					class="section asd relative flex h-full flex-col items-center justify-center overflow-hidden bg-teams-gradient bg-cover bg-center md:pt-0"
 				>
+					<img class="teams-landscape-image" src="./img/teams.png" alt="img" />
 					<img
-						class="absolute left-[0px] top-1/2 z-0 h-auto w-full max-w-[1200px] -translate-y-1/2 object-cover mix-blend-color-dodge lg:max-w-[1000px] md:hidden"
+						class="teams-desktop-image"
 						src="./img/teams.png"
 						alt="process img"
 					/>
 					<img
-						class="landscape-image hidden h-auto w-full max-w-full object-cover mix-blend-color-dodge md:block"
+						class="teams-mobile-image"
 						src="./img/teams-mob.png"
 						alt="process img"
 					/>

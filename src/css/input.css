@@ -31,7 +31,7 @@
 	}
 	/* Fixed Header */
 	.fixed-header {
-		@apply fixed left-0 !top-0 z-20 w-full bg-slate-800/70 shadow-[0px_4px_61px_0px_rgba(0,0,0,0.15)] transition-all;
+		@apply fixed left-0 !top-0 z-20 w-full bg-slate-800/90 py-0 shadow-[0px_4px_61px_0px_rgba(0,0,0,0.15)] transition-all;
 	}
 	/* Mobile Menu */
 	.mobile-menu {
@@ -56,6 +56,25 @@
 		@apply leading-[1.7] text-[#C7CAD9];
 	}
 }
+.automate-landscape-image {
+	@apply hidden;
+}
+.automate-desktop-image {
+	@apply absolute right-0 bottom-0 z-0 h-auto w-full max-w-[1100px] object-cover mix-blend-lighten md:hidden;
+}
+.automate-mobile-image {
+	@apply hidden h-auto w-full max-w-full mix-blend-lighten md:block;
+}
+
+.teams-landscape-image {
+	@apply hidden;
+}
+.teams-desktop-image {
+	@apply absolute left-[0px] top-1/2 z-0 h-auto w-full max-w-[1200px] -translate-y-1/2 object-cover mix-blend-color-dodge lg:max-w-[1000px] md:hidden;
+}
+.teams-mobile-image {
+	@apply hidden h-auto w-full max-w-full object-cover mix-blend-color-dodge md:block;
+}
 
 @media only screen and (max-width: 992px) and (orientation: landscape) {
 	h1 {
@@ -74,7 +93,17 @@
 	.btn.section-btn {
 		@apply !mx-auto !max-w-fit;
 	}
-	.landscape-image {
-		@apply mx-auto max-w-[200px];
+	.automate-landscape-image {
+		@apply absolute inset-0 block;
+	}
+	.automate-mobile-image {
+		@apply hidden;
+	}
+
+	.teams-landscape-image {
+		@apply absolute left-0 top-0 bottom-0 block w-1/2;
+	}
+	.teams-mobile-image {
+		@apply hidden;
 	}
 }
