@@ -63,3 +63,23 @@ function fixedHeader() {
 	}
 }
 window.addEventListener('scroll', fixedHeader)
+
+document.addEventListener('DOMContentLoaded', function () {
+	var menuLinks = document.querySelectorAll('#menu a')
+
+	window.addEventListener('scroll', function () {
+		var fromTop = window.scrollY
+
+		menuLinks.forEach(function (link) {
+			var section = document.querySelector(link.getAttribute('href'))
+			if (
+				section.offsetTop <= fromTop &&
+				section.offsetTop + section.offsetHeight > fromTop
+			) {
+				link.classList.add('active')
+			} else {
+				link.classList.remove('active')
+			}
+		})
+	})
+})

@@ -14,7 +14,7 @@
 	}
 
 	h1 {
-		@apply text-[110px] font-bold uppercase leading-[1.1] tracking-[6.6px] text-white sm:text-center sm:text-[69px] xs:text-5xl;
+		@apply text-[110px] font-bold uppercase leading-[1.1] tracking-[6.6px] text-white md:text-center md:text-[69px] xs:text-5xl;
 	}
 }
 
@@ -27,7 +27,7 @@
 		@apply bg-white py-[10px] px-[28px] font-bold text-[#464444] transition-colors hover:border-slate-500 hover:bg-slate-800 hover:text-white;
 	}
 	.btn.section-btn {
-		@apply max-w-fit border-[#55565B] bg-[rgba(255,255,255,0.06)] py-4 px-20 font-semibold text-white  hover:bg-[rgba(255,255,255,0.2)] sm:max-w-full sm:px-9 sm:text-center;
+		@apply max-w-fit border-[#55565B] bg-[rgba(255,255,255,0.06)] py-4 px-20 font-semibold text-white  hover:bg-[rgba(255,255,255,0.2)] md:max-w-full md:px-9 md:text-center;
 	}
 	/* Fixed Header */
 	.fixed-header {
@@ -40,7 +40,7 @@
 
 	/* Section */
 	.section {
-		@apply flex min-h-screen flex-col items-center py-20 md:py-14 sm:py-10;
+		@apply flex min-h-screen flex-col items-center py-20 md:py-14 md:py-10 md:pb-16;
 	}
 
 	/* Menu Link */
@@ -49,10 +49,19 @@
 	}
 	/* Section Title */
 	.section-title {
-		@apply text-[88px] font-bold uppercase leading-none tracking-[5.28px] text-[#EFEEEE] sm:text-4xl;
+		@apply text-[88px] font-bold uppercase leading-none tracking-[5.28px] text-[#EFEEEE] md:text-4xl;
 	}
 	/* Section Text */
 	.section-text {
 		@apply leading-[1.7] text-[#C7CAD9];
+	}
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+	h1 {
+		@apply text-4xl;
+	}
+	#hero a.btn.btn-white {
+		@apply mt-5;
 	}
 }

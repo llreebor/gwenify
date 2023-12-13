@@ -11,16 +11,33 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Red+Hat+Display:wght@400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./img/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/favicon/favicon-16x16.png"
+		/>
 		<link rel="stylesheet" href="./css/output.css" />
 	</head>
 
 	<body class="h-full bg-[#0E151E]">
 		<div class="wrapper flex min-h-full flex-col">
 			<div
-				class="flex h-full min-h-screen w-full flex-col bg-[url('../img/hero-bg.jpg')] bg-cover bg-center bg-no-repeat sm:relative sm:after:absolute sm:after:inset-0 sm:after:z-0 sm:after:bg-black/10 sm:after:backdrop-blur-[2px]"
+				class="flex h-full min-h-screen w-full flex-col bg-[url('../img/hero-bg.jpg')] bg-cover bg-center bg-no-repeat md:relative md:after:absolute md:after:inset-0 md:after:z-0 md:after:bg-black/10 md:after:backdrop-blur-[2px]"
 			>
 				<!-- Header -->
-				<header id="header" class="group">
+				<header id="header" class="dark group z-50">
 					<div class="container">
 						<div class="flex items-center justify-between py-3">
 							<a href=" #" class="z-20 flex">
@@ -29,25 +46,30 @@
 							<!-- Desktop menu -->
 							<ul
 								id="menu"
-								class="z-10 flex animate-fadeIn items-center gap-14 lg:text-red-300 md:gap-10 sm:hidden sm:flex-col sm:items-center sm:justify-center"
+								class="z-10 flex animate-fadeIn items-center gap-14 lg:text-red-300 md:hidden md:flex-col md:items-center md:justify-center md:gap-10"
 							>
 								<!-- Menu Item -->
 								<li>
-									<a class="menu-link" href="#about-section">
-										<span>About Us</span>
+									<a class="menu-link group" href="#hero">
+										<span class="underline-offset-4 group-[.active]:underline">
+											Home
+										</span>
 									</a>
 								</li>
 								<!-- Menu Item -->
 								<li>
-									<a class="menu-link" href="#">
-										<span>Services</span>
+									<a class="menu-link group" href="#automate-section">
+										<span class="underline-offset-4 group-[.active]:underline">
+											Automation
+										</span>
 									</a>
 								</li>
-
 								<!-- Menu Item -->
 								<li>
-									<a class="menu-link" href="#">
-										<span>Gwen</span>
+									<a class="menu-link group" href="#about-section">
+										<span class="underline-offset-4 group-[.active]:underline">
+											About Us
+										</span>
 									</a>
 								</li>
 							</ul>
@@ -58,26 +80,26 @@
 									class="flex h-full w-2/3 flex-col items-center justify-center gap-[86px] bg-white bg-transparent py-10 shadow-[-17px_-10px_23.8px_0px_rgba(0,0,0,0.25)] group-[.dark]:bg-slate-800 group-[.dark]:text-white"
 								>
 									<li>
-										<a href="#header" class="font-bold">About</a>
+										<a href="#hero" class="font-bold">Home</a>
 									</li>
 									<li>
-										<a href="#about" class="font-bold">Services</a>
+										<a href="#automate-section" class="font-bold">Automation</a>
 									</li>
 									<li>
-										<a href="#expertise" class="font-bold">Gwen</a>
+										<a href="#about-section" class="font-bold">About Us</a>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Contact Us Button -->
-							<a href="#" class="btn btn-white font-poppins sm:hidden">
+							<a href="#" class="btn btn-white font-poppins md:hidden">
 								Contact Us
 							</a>
 
 							<!-- Burger Button -->
 							<button
 								id="burger"
-								class="group relative z-50 hidden h-5 w-[30px] sm:block"
+								class="group relative z-50 hidden h-5 w-[30px] md:block"
 							>
 								<span
 									class="absolute left-0 top-0 flex h-[2px] w-[30px] rounded bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45 group-[.active]:bg-black group-[.dark]:bg-white"
@@ -93,18 +115,39 @@
 					</div>
 				</header>
 
-				<section id="hero" class="flex flex-1 flex-col">
+				<section id="hero" class="relative flex flex-1 flex-col">
+					<!-- Nav Button -->
+					<a
+						href="#automate-section"
+						class="absolute bottom-10 left-1/2 z-20 hidden h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border border-white md:bottom-5 md:flex"
+					>
+						<svg
+							class="mt-2 animate-bounce"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M11.2927 20.364C11.4802 20.5514 11.7345 20.6567 11.9997 20.6567C12.2648 20.6567 12.5191 20.5514 12.7067 20.364L18.3637 14.707C18.4592 14.6147 18.5353 14.5044 18.5878 14.3824C18.6402 14.2604 18.6678 14.1291 18.6689 13.9964C18.6701 13.8636 18.6448 13.7319 18.5945 13.609C18.5442 13.4861 18.4699 13.3744 18.3761 13.2806C18.2822 13.1867 18.1705 13.1124 18.0476 13.0621C17.9247 13.0118 17.793 12.9865 17.6603 12.9877C17.5275 12.9889 17.3963 13.0164 17.2743 13.0688C17.1522 13.1213 17.0419 13.1974 16.9497 13.293L12.9997 17.243L12.9997 3.99995C12.9997 3.73474 12.8943 3.48038 12.7068 3.29284C12.5192 3.10531 12.2649 2.99995 11.9997 2.99995C11.7344 2.99995 11.4801 3.10531 11.2926 3.29284C11.105 3.48038 10.9997 3.73474 10.9997 3.99995L10.9997 17.243L7.04966 13.293C6.86105 13.1108 6.60845 13.01 6.34626 13.0123C6.08406 13.0146 5.83325 13.1197 5.64784 13.3051C5.46243 13.4905 5.35726 13.7414 5.35498 14.0035C5.3527 14.2657 5.4535 14.5183 5.63566 14.707L11.2927 20.364Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
 					<div class="container flex h-full flex-1 flex-col">
 						<div
-							class="z-10 mt-[90px] flex w-full max-w-[600px] flex-col gap-4 pb-10 sm:mt-[30px] sm:h-full sm:max-w-full sm:flex-auto"
+							class="z-10 mt-[90px] flex w-full max-w-[600px] flex-col gap-4 pb-10 md:mt-[30px] md:h-full md:max-w-full md:flex-auto"
 						>
 							<h1>Reduce manual work</h1>
-							<p class="text-[26px] leading-normal text-white sm:text-center">
+							<p
+								class="text-[26px] leading-normal text-white md:text-center md:text-2xl"
+							>
 								Streamline Operations and Elevate Experiences
 							</p>
 							<a
 								href="#chat-section"
-								class="btn btn-white z-10 hidden sm:mt-auto sm:flex sm:justify-center"
+								class="btn btn-white z-10 hidden md:mt-20 md:flex md:justify-center"
 							>
 								Contact Us
 							</a>
@@ -121,7 +164,7 @@
 					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0F1320] bg-cover bg-center md:pt-0"
 				>
 					<img
-						class="absolute right-0 bottom-0 z-0 h-auto w-full max-w-[1300px] object-cover mix-blend-lighten xl:max-w-[1040px] md:hidden"
+						class="absolute right-0 bottom-0 z-0 h-auto w-full max-w-[1200px] object-cover mix-blend-lighten md:hidden"
 						src="./img/process-image.png"
 						alt="process img"
 					/>
@@ -140,9 +183,28 @@
 								costs. Boost productivity, customer satisfaction and transform
 								your operations.
 							</p>
-							<a href="#teams-section" class="btn section-btn">Next</a>
 						</div>
 					</div>
+
+					<!-- Nav Button -->
+					<a
+						href="#teams-section"
+						class="border-w absolute bottom-10 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border md:bottom-5 md:hidden"
+					>
+						<svg
+							class="mt-2 animate-bounce"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M11.2927 20.364C11.4802 20.5514 11.7345 20.6567 11.9997 20.6567C12.2648 20.6567 12.5191 20.5514 12.7067 20.364L18.3637 14.707C18.4592 14.6147 18.5353 14.5044 18.5878 14.3824C18.6402 14.2604 18.6678 14.1291 18.6689 13.9964C18.6701 13.8636 18.6448 13.7319 18.5945 13.609C18.5442 13.4861 18.4699 13.3744 18.3761 13.2806C18.2822 13.1867 18.1705 13.1124 18.0476 13.0621C17.9247 13.0118 17.793 12.9865 17.6603 12.9877C17.5275 12.9889 17.3963 13.0164 17.2743 13.0688C17.1522 13.1213 17.0419 13.1974 16.9497 13.293L12.9997 17.243L12.9997 3.99995C12.9997 3.73474 12.8943 3.48038 12.7068 3.29284C12.5192 3.10531 12.2649 2.99995 11.9997 2.99995C11.7344 2.99995 11.4801 3.10531 11.2926 3.29284C11.105 3.48038 10.9997 3.73474 10.9997 3.99995L10.9997 17.243L7.04966 13.293C6.86105 13.1108 6.60845 13.01 6.34626 13.0123C6.08406 13.0146 5.83325 13.1197 5.64784 13.3051C5.46243 13.4905 5.35726 13.7414 5.35498 14.0035C5.3527 14.2657 5.4535 14.5183 5.63566 14.707L11.2927 20.364Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
 				</section>
 
 				<!-- Section Teams-->
@@ -171,28 +233,47 @@
 								With streamlined processes, teams can collaborate more
 								effectively, make data-driven decisions and drive improvement.
 							</p>
-							<a href="#error-section" class="btn section-btn">Next</a>
 						</div>
 					</div>
+
+					<!-- Nav Button -->
+					<a
+						href="#error-section"
+						class="border-w absolute bottom-10 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border md:bottom-5 md:hidden"
+					>
+						<svg
+							class="mt-2 animate-bounce"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M11.2927 20.364C11.4802 20.5514 11.7345 20.6567 11.9997 20.6567C12.2648 20.6567 12.5191 20.5514 12.7067 20.364L18.3637 14.707C18.4592 14.6147 18.5353 14.5044 18.5878 14.3824C18.6402 14.2604 18.6678 14.1291 18.6689 13.9964C18.6701 13.8636 18.6448 13.7319 18.5945 13.609C18.5442 13.4861 18.4699 13.3744 18.3761 13.2806C18.2822 13.1867 18.1705 13.1124 18.0476 13.0621C17.9247 13.0118 17.793 12.9865 17.6603 12.9877C17.5275 12.9889 17.3963 13.0164 17.2743 13.0688C17.1522 13.1213 17.0419 13.1974 16.9497 13.293L12.9997 17.243L12.9997 3.99995C12.9997 3.73474 12.8943 3.48038 12.7068 3.29284C12.5192 3.10531 12.2649 2.99995 11.9997 2.99995C11.7344 2.99995 11.4801 3.10531 11.2926 3.29284C11.105 3.48038 10.9997 3.73474 10.9997 3.99995L10.9997 17.243L7.04966 13.293C6.86105 13.1108 6.60845 13.01 6.34626 13.0123C6.08406 13.0146 5.83325 13.1197 5.64784 13.3051C5.46243 13.4905 5.35726 13.7414 5.35498 14.0035C5.3527 14.2657 5.4535 14.5183 5.63566 14.707L11.2927 20.364Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
 				</section>
 
 				<!-- Section Error -->
 				<section
 					id="error-section"
-					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center sm:pt-0"
+					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center md:pt-0"
 				>
 					<img
-						class="absolute right-0 top-1/2 z-0 h-auto w-full max-w-[1200px] -translate-y-1/2 object-cover mix-blend-color-dodge sm:hidden"
+						class="absolute right-0 top-1/2 z-0 h-auto w-full max-w-[1200px] -translate-y-1/2 object-cover mix-blend-color-dodge xl:max-w-[1000px] lg:max-w-[900px] md:hidden"
 						src="./img/error.png"
 						alt="process img"
 					/>
 					<img
-						class="hidden h-auto w-full max-w-full object-cover mix-blend-color-dodge sm:block"
+						class="hidden h-auto w-full max-w-full object-cover mix-blend-color-dodge md:block"
 						src="./img/error-mob.png"
 						alt="process img"
 					/>
 					<div
-						class="container z-10 grid h-full grid-cols-2 sm:mt-[30px] sm:grid-cols-1"
+						class="container z-10 grid h-full grid-cols-2 md:mt-[30px] md:grid-cols-1"
 					>
 						<div class="flex flex-col gap-6">
 							<h2 class="section-title">Eliminate Errors</h2>
@@ -203,23 +284,42 @@
 								outcomes. Elevate your processes and deliver consistent
 								error-free results
 							</p>
-							<a href="#about-section" class="btn section-btn">Next</a>
 						</div>
 					</div>
+
+					<!-- Nav Button -->
+					<a
+						href="#about-section"
+						class="border-w absolute bottom-10 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border md:bottom-5 md:hidden"
+					>
+						<svg
+							class="mt-2 animate-bounce"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M11.2927 20.364C11.4802 20.5514 11.7345 20.6567 11.9997 20.6567C12.2648 20.6567 12.5191 20.5514 12.7067 20.364L18.3637 14.707C18.4592 14.6147 18.5353 14.5044 18.5878 14.3824C18.6402 14.2604 18.6678 14.1291 18.6689 13.9964C18.6701 13.8636 18.6448 13.7319 18.5945 13.609C18.5442 13.4861 18.4699 13.3744 18.3761 13.2806C18.2822 13.1867 18.1705 13.1124 18.0476 13.0621C17.9247 13.0118 17.793 12.9865 17.6603 12.9877C17.5275 12.9889 17.3963 13.0164 17.2743 13.0688C17.1522 13.1213 17.0419 13.1974 16.9497 13.293L12.9997 17.243L12.9997 3.99995C12.9997 3.73474 12.8943 3.48038 12.7068 3.29284C12.5192 3.10531 12.2649 2.99995 11.9997 2.99995C11.7344 2.99995 11.4801 3.10531 11.2926 3.29284C11.105 3.48038 10.9997 3.73474 10.9997 3.99995L10.9997 17.243L7.04966 13.293C6.86105 13.1108 6.60845 13.01 6.34626 13.0123C6.08406 13.0146 5.83325 13.1197 5.64784 13.3051C5.46243 13.4905 5.35726 13.7414 5.35498 14.0035C5.3527 14.2657 5.4535 14.5183 5.63566 14.707L11.2927 20.364Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
 				</section>
 
 				<!-- Sections Partners -->
 				<section
 					id="partner-section"
-					class="bg-[rgba(105,61,83,0.10)] p-20 sm:bg-transparent sm:pt-0"
+					class="bg-[rgba(105,61,83,0.10)] p-20 md:bg-transparent md:pt-0"
 				>
 					<div class="container">
 						<div
-							class="flex items-center justify-between gap-20 sm:flex-col sm:gap-[60px]"
+							class="flex items-center justify-around gap-20 md:flex-col md:gap-[60px]"
 						>
-							<div class="flex items-center justify-center">
+							<!-- <div class="flex items-center justify-center">
 								<img src="./img/partner-1.svg" alt="partner logo" />
-							</div>
+							</div> -->
 							<div class="flex items-center justify-center">
 								<img src="./img/partner-2.svg" alt="partner logo" />
 							</div>
@@ -233,16 +333,16 @@
 				<!-- Section About -->
 				<section
 					id="about-section"
-					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#08141D] bg-cover bg-center sm:pt-0"
+					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#08141D] bg-cover bg-center md:pt-0"
 				>
 					<img
-						class="absolute right-0 top-0 mix-blend-lighten sm:top-1/2 sm:-translate-y-1/2"
+						class="absolute right-0 top-0 mix-blend-lighten md:top-1/2 md:-translate-y-1/2"
 						src="./img/about.png"
 						alt="img"
 					/>
 
 					<div
-						class="container z-10 mx-auto flex h-full w-full max-w-[963px] flex-col sm:mt-[30px]"
+						class="container z-10 mx-auto flex h-full w-full max-w-[963px] flex-col md:mt-[30px]"
 					>
 						<div class="flex flex-col items-center gap-[30px]">
 							<img src="./img/about-logo.png" alt="about logo" />
@@ -261,7 +361,7 @@
 							<a
 								href="#"
 								target="_blank"
-								class="btn section-btn text-center sm:w-full"
+								class="btn section-btn text-center md:w-full"
 							>
 								Sponsor our Open Source work
 							</a>
@@ -272,15 +372,15 @@
 				<!-- Section Сhat -->
 				<section
 					id="chat-section"
-					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center sm:pt-0"
+					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center md:pt-0"
 				>
 					<div
 						class="container z-10 grid h-full grid-cols-2 items-center gap-20 md:grid-cols-1 md:gap-10"
 					>
-						<div class="overflow-hidden rounded-[34px]">
+						<div class="overflow-hidden">
 							<img
 								class="h-auto w-full max-w-full"
-								src="./img/chat.jpg"
+								src="./img/chat.png"
 								alt="chat-img"
 							/>
 						</div>
@@ -298,7 +398,7 @@
 							</p>
 							<a
 								href="#"
-								class="btn btn-white max-w-fit !px-20 sm:max-w-full sm:text-center"
+								class="btn btn-white max-w-fit !px-20 md:max-w-full md:text-center"
 							>
 								Book a call
 							</a>
@@ -310,10 +410,10 @@
 			<!-- Footer -->
 			<footer class="bg-[#070F15]">
 				<div class="container">
-					<div class="grid grid-cols-3 gap-5 py-12 sm:grid-cols-1 sm:gap-12">
-						<div class="sm:flex sm:flex-col sm:items-center">
+					<div class="grid grid-cols-3 gap-5 py-12 md:grid-cols-1 md:gap-12">
+						<div class="md:flex md:flex-col md:items-center">
 							<a href="#"><img src="./img/logo.png" alt="logo footer" /></a>
-							<ul class="mt-1 flex items-center gap-3 sm:mt-0">
+							<ul class="mt-1 flex items-center gap-3 md:mt-0">
 								<li>
 									<a
 										class="group flex h-[50px] w-[50px] items-center justify-center p-3"
@@ -356,10 +456,10 @@
 								</li>
 							</ul>
 						</div>
-						<div class="sm:flex sm:flex-col sm:items-center">
-							<p class="mt-4 text-xl font-bold text-[#EFEEEE] sm:mt-0">Links</p>
+						<div class="md:flex md:flex-col md:items-center">
+							<p class="mt-4 text-xl font-bold text-[#EFEEEE] md:mt-0">Links</p>
 
-							<ul class="mt-5 flex flex-col gap-4 sm:items-center">
+							<ul class="mt-5 flex flex-col gap-4 md:items-center">
 								<li>
 									<a
 										class="text-[#757A90] transition-colors hover:text-white"
@@ -386,11 +486,11 @@
 								</li>
 							</ul>
 						</div>
-						<div class="sm:flex sm:flex-col sm:items-center">
-							<p class="mt-4 text-xl font-bold text-[#EFEEEE] sm:mt-0">
+						<div class="md:flex md:flex-col md:items-center">
+							<p class="mt-4 text-xl font-bold text-[#EFEEEE] md:mt-0">
 								Location
 							</p>
-							<a class="mt-5 flex gap-1 text-[#757A90] sm:gap-4" href="#">
+							<a class="mt-5 flex gap-1 text-[#757A90] md:gap-4" href="#">
 								<svg
 									class="mt-[3px] shrink-0"
 									width="18"
@@ -407,7 +507,7 @@
 
 								<span>
 									Level 17, 31 Queen Street,
-									<br class="hidden sm:block" />
+									<br class="hidden md:block" />
 									Melbourne, VIC 3000
 								</span>
 							</a>
