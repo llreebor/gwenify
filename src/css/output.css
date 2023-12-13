@@ -1438,6 +1438,17 @@ h1 {
   #hero a.btn.btn-white {
     margin-top: 1.25rem;
   }
+
+  .btn-white {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .hero-nav-btn {
+    bottom: 2.5rem !important;
+  }
 }
 
 .hover\:text-white:hover {
@@ -1525,6 +1536,10 @@ h1 {
 @media (max-width: 991.99px) {
   .md\:relative {
     position: relative;
+  }
+
+  .md\:bottom-20 {
+    bottom: 5rem;
   }
 
   .md\:bottom-5 {

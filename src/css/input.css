@@ -64,4 +64,11 @@
 	#hero a.btn.btn-white {
 		@apply mt-5;
 	}
+
+	.btn-white {
+		@apply mx-auto max-w-fit;
+	}
+	.hero-nav-btn {
+		@apply !bottom-10;
+	}
 }
