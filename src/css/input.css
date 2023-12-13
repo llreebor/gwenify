@@ -57,9 +57,9 @@
 	}
 }
 
-@media only screen and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 992px) and (orientation: landscape) {
 	h1 {
-		@apply text-4xl;
+		@apply text-5xl;
 	}
 	#hero a.btn.btn-white {
 		@apply mt-5;
