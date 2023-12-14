@@ -64,21 +64,73 @@ function fixedHeader() {
 }
 window.addEventListener('scroll', fixedHeader)
 
+// document.addEventListener('DOMContentLoaded', function () {
+// 	const menuLinks = document.querySelectorAll('#menu a')
+
+// 	window.addEventListener('scroll', function () {
+// 		const fromTop = window.scrollY
+
+// 		menuLinks.forEach(function (link) {
+// 			const section = document.querySelector(link.getAttribute('href'))
+// 			if (
+// 				section.offsetTop <= fromTop &&
+// 				section.offsetTop + section.offsetHeight > fromTop
+// 			) {
+// 				link.classList.add('active')
+// 			} else {
+// 				link.classList.remove('active')
+// 			}
+// 		})
+// 	})
+// })
+
 document.addEventListener('DOMContentLoaded', function () {
-	var menuLinks = document.querySelectorAll('#menu a')
+	const menuLinks = document.querySelectorAll('#menu a')
+	let isInsideServiceSection = false
 
 	window.addEventListener('scroll', function () {
-		var fromTop = window.scrollY
+		const fromTop = window.scrollY
 
-		menuLinks.forEach(function (link) {
-			var section = document.querySelector(link.getAttribute('href'))
+		menuLinks.forEach(function (link, index) {
+			const sectionId = link.getAttribute('href').substring(1)
+			const section = document.getElementById(sectionId)
+
+			// Устанавливаем активный класс для первой секции
 			if (
-				section.offsetTop <= fromTop &&
-				section.offsetTop + section.offsetHeight > fromTop
+				index === 0 &&
+				section &&
+				fromTop >= section.offsetTop &&
+				fromTop < section.offsetTop + section.offsetHeight
 			) {
 				link.classList.add('active')
+				isInsideServiceSection = false // Сбрасываем флаг, чтобы не подсвечивать второй пункт меню
+			}
+			// Устанавливаем активный класс для второго пункта только если внутри секций с классом 'service-section'
+			else if (index === 1 && isInsideServiceSection) {
+				link.classList.add('active')
+			}
+			// Устанавливаем активный класс для последней секции
+			else if (
+				index === menuLinks.length - 1 &&
+				fromTop + window.innerHeight >= document.body.offsetHeight &&
+				section &&
+				fromTop >= section.offsetTop &&
+				fromTop < section.offsetTop + section.offsetHeight
+			) {
+				link.classList.add('active')
+				isInsideServiceSection = false // Сбрасываем флаг при достижении последней секции
 			} else {
 				link.classList.remove('active')
+			}
+
+			// Проверяем, находится ли прокрутка внутри секции с классом 'service-section'
+			if (
+				section &&
+				section.classList.contains('service-section') &&
+				fromTop >= section.offsetTop &&
+				fromTop < section.offsetTop + section.offsetHeight
+			) {
+				isInsideServiceSection = true
 			}
 		})
 	})

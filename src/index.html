@@ -4,7 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Gwenify</title>
+		<title>Gwenify | Automation & Robotics</title>
+		<meta property="og:image" content="./img/media-image.png" />
+		<meta
+			name="description"
+			content="Since 2014, we’ve been working hard to automate repetitive tests
+								and tasks through our open source Gwen project. Matured and evolved over many years, we now use Gwen to reliably
+								automate business processes and free teams from the work of
+								robots. Our innovative solutions utilise cloud technologies to
+								execute routine tasks at scale, revolutionising your workflow.
+								Our ongoing support to clients is exceptional."
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -34,12 +44,12 @@
 	<body class="h-full bg-[#0E151E]">
 		<div class="wrapper flex min-h-full flex-col">
 			<div
-				class="flex h-full min-h-screen w-full flex-col bg-[url('../img/hero-bg.jpg')] bg-cover bg-center bg-no-repeat md:relative md:after:absolute md:after:inset-0 md:after:z-0 md:after:bg-black/10 md:after:backdrop-blur-[2px]"
+				class="flex h-full min-h-screen w-full flex-col bg-[url('../img/hero-bg.png')] bg-cover bg-center bg-no-repeat md:relative"
 			>
 				<!-- Header -->
 				<header id="header" class="dark group z-50">
 					<div class="container">
-						<div class="flex items-center gap-10 py-3">
+						<div class="flex items-center gap-10 py-3 md:py-1">
 							<a href=" #" class="z-20 flex">
 								<img src="./img/logo.png" alt="logo image" />
 							</a>
@@ -51,31 +61,19 @@
 								<!-- Menu Item -->
 								<li>
 									<a class="menu-link group" href="#hero">
-										<span
-											class="underline-offset-8 group-[.active]:text-orange-400"
-										>
-											Home
-										</span>
+										<span class="group-[.active]:text-[#c1d1f0]">Home</span>
 									</a>
 								</li>
 								<!-- Menu Item -->
 								<li>
 									<a class="menu-link group" href="#automate-section">
-										<span
-											class="underline-offset-8 group-[.active]:text-orange-400"
-										>
-											Automation
-										</span>
+										<span class="group-[.active]:text-[#c1d1f0]">Services</span>
 									</a>
 								</li>
 								<!-- Menu Item -->
 								<li>
 									<a class="menu-link group" href="#about-section">
-										<span
-											class="underline-offset-8 group-[.active]:text-orange-400"
-										>
-											About Us
-										</span>
+										<span class="group-[.active]:text-[#c1d1f0]">About Us</span>
 									</a>
 								</li>
 							</ul>
@@ -83,13 +81,13 @@
 							<!-- Mobile Menu -->
 							<div id="mobile-menu" class="mobile-menu z-50">
 								<ul
-									class="flex h-full w-2/3 flex-col items-center justify-center gap-[86px] bg-white bg-transparent py-10 shadow-[-17px_-10px_23.8px_0px_rgba(0,0,0,0.25)] group-[.dark]:bg-[rgb(10_15_20)] group-[.dark]:text-white"
+									class="mobile-menu-list flex h-full w-2/3 flex-col items-center justify-center gap-[86px] bg-white bg-transparent py-10 shadow-[-17px_-10px_23.8px_0px_rgba(0,0,0,0.25)] group-[.dark]:bg-[rgb(10_15_20)] group-[.dark]:text-white"
 								>
 									<li>
 										<a href="#hero" class="font-bold">Home</a>
 									</li>
 									<li>
-										<a href="#automate-section" class="font-bold">Automation</a>
+										<a href="#automate-section" class="font-bold">Services</a>
 									</li>
 									<li>
 										<a href="#about-section" class="font-bold">About Us</a>
@@ -173,7 +171,7 @@
 				<!-- Section Automate -->
 				<section
 					id="automate-section"
-					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0F1320] bg-cover bg-center md:pt-0"
+					class="section service-section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0F1320] bg-cover bg-center md:pt-0"
 				>
 					<img
 						class="automate-landscape-image"
@@ -190,7 +188,9 @@
 						src="./img/process-image-mob.png"
 						alt="process img"
 					/>
-					<div class="container z-10 grid h-full grid-cols-2 md:grid-cols-1">
+					<div
+						class="landscape-grid container z-10 grid h-full grid-cols-2 md:grid-cols-1"
+					>
 						<div class="flex flex-col gap-6">
 							<h2 class="section-title">Automate Processes</h2>
 							<p class="section-text">
@@ -227,9 +227,9 @@
 				<!-- Section Teams-->
 				<section
 					id="teams-section"
-					class="section asd relative flex h-full flex-col items-center justify-center overflow-hidden bg-teams-gradient bg-cover bg-center md:pt-0"
+					class="section service-section relative flex h-full flex-col items-center justify-center overflow-hidden bg-teams-gradient bg-cover bg-center md:pt-0"
 				>
-					<img class="teams-landscape-image" src="./img/teams.png" alt="img" />
+					<img class="teams-landscape-image" src="./img/teams.png	" alt="img" />
 					<img
 						class="teams-desktop-image"
 						src="./img/teams.png"
@@ -241,7 +241,7 @@
 						alt="process img"
 					/>
 					<div
-						class="container z-10 grid h-full grid-cols-2 md:mt-[30px] md:grid-cols-1"
+						class="landscape-grid container z-10 grid h-full grid-cols-2 md:mt-[30px] md:grid-cols-1"
 					>
 						<div class="col-start-2 flex flex-col gap-6">
 							<h2 class="section-title">Empower Teams</h2>
@@ -278,20 +278,26 @@
 				<!-- Section Error -->
 				<section
 					id="error-section"
-					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center md:pt-0"
+					class="section service-section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center md:pt-0"
 				>
 					<img
-						class="absolute right-0 top-1/2 z-0 h-auto w-full max-w-[1200px] -translate-y-1/2 object-cover mix-blend-color-dodge xl:max-w-[1000px] lg:max-w-[900px] md:hidden"
+						class="error-landscape-image"
+						src="./img/error-landscape.png"
+						alt="img"
+					/>
+					<img
+						class="error-desktop-image"
 						src="./img/error.png"
 						alt="process img"
 					/>
 					<img
-						class="landscape-image hidden h-auto w-full max-w-full object-cover mix-blend-color-dodge md:block"
+						class="error-mobile-image"
 						src="./img/error-mob.png"
 						alt="process img"
 					/>
+
 					<div
-						class="container z-10 grid h-full grid-cols-2 md:mt-[30px] md:grid-cols-1"
+						class="landscape-grid container z-10 grid h-full grid-cols-2 md:mt-[30px] md:grid-cols-1"
 					>
 						<div class="flex flex-col gap-6">
 							<h2 class="section-title">Eliminate Errors</h2>
@@ -333,7 +339,7 @@
 				>
 					<div class="container">
 						<div
-							class="flex items-center justify-around gap-20 md:flex-col md:gap-[60px]"
+							class="partners-landscape-grid flex items-center justify-around gap-20 md:flex-col md:gap-[60px]"
 						>
 							<!-- <div class="flex items-center justify-center">
 								<img src="./img/partner-1.svg" alt="partner logo" />
@@ -362,8 +368,12 @@
 					<div
 						class="container z-10 mx-auto flex h-full w-full max-w-[963px] flex-col md:mt-[30px]"
 					>
-						<div class="flex flex-col items-center gap-[30px]">
-							<img src="./img/about-logo.png" alt="about logo" />
+						<div class="about-grid flex flex-col items-center gap-[30px]">
+							<img
+								class="about-logo"
+								src="./img/about-logo.png"
+								alt="about logo"
+							/>
 							<h2 class="section-title">About US</h2>
 							<p class="section-text text-center">
 								Since 2014, we’ve been working hard to automate repetitive tests
@@ -409,7 +419,7 @@
 					class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center md:pt-0"
 				>
 					<div
-						class="container z-10 grid h-full grid-cols-2 items-center gap-20 md:grid-cols-1 md:gap-10"
+						class="landscape-grid landscape-chat-grid container z-10 grid h-full grid-cols-2 items-center gap-20 md:grid-cols-1 md:gap-10"
 					>
 						<div class="overflow-hidden">
 							<img
@@ -418,7 +428,7 @@
 								alt="chat-img"
 							/>
 						</div>
-						<div class="flex flex-col gap-6">
+						<div class="chat-grid flex flex-col gap-6">
 							<h2 class="section-title">Let’s Chat</h2>
 							<p class="section-text">
 								Ready to transform your business with automation tailored to
@@ -507,7 +517,7 @@
 										class="text-[#757A90] transition-colors hover:text-white"
 										href="#automate-section"
 									>
-										Automation
+										Services
 									</a>
 								</li>
 								<li>
