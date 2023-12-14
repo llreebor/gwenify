@@ -850,32 +850,6 @@ h1 {
   }
 }
 
-.\!section {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-@media (max-width: 991.99px) {
-  .\!section {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-}
-
-@media (max-width: 767.99px) {
-  .\!section {
-    min-height: 100%;
-    justify-content: flex-start !important;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-bottom: 5rem;
-  }
-}
-
 /* Menu Link */
 
 .menu-link {
@@ -1029,10 +1003,6 @@ h1 {
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-20 {
   height: 5rem;
 }
@@ -1063,10 +1033,6 @@ h1 {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-2\/3 {
@@ -1135,22 +1101,6 @@ h1 {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce {
-  animation: bounce 1s infinite;
 }
 
 @keyframes bounce {
@@ -1247,10 +1197,6 @@ h1 {
   gap: 1.5rem;
 }
 
-.gap-\[30px\] {
-  gap: 30px;
-}
-
 .gap-\[86px\] {
   gap: 86px;
 }
@@ -1318,16 +1264,12 @@ h1 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/img\/hero-bg\.png\'\)\] {
-  background-image: url('../img/hero-bg.png');
+.bg-\[url\(\'\.\.\/img\/hero-bg\.jpg\'\)\] {
+  background-image: url('../img/hero-bg.jpg');
 }
 
 .bg-teams-gradient {
   background-image: linear-gradient(0deg,rgba(45, 19, 37, 0.2) 0%,rgba(45, 19, 37, 0.2) 100%),linear-gradient(166deg,rgba(23, 14, 25, 0.99) 4.86%,rgba(12, 18, 24, 0.99) 104.78%);
-}
-
-.bg-\[url\(\'\.\.\/img\/hero-bg\.jpg\'\)\] {
-  background-image: url('../img/hero-bg.jpg');
 }
 
 .bg-cover {
