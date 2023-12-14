@@ -1027,6 +1027,10 @@ h1 {
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -1053,6 +1057,10 @@ h1 {
 
 .w-full {
   width: 100%;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-\[600px\] {
