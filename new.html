@@ -1,0 +1,61 @@
+<ul
+	id="menu"
+	class="z-10 ml-auto flex w-full flex-1 animate-fadeIn items-center justify-end gap-14 lg:gap-12 lg:text-red-300 md:hidden md:flex-col md:items-center md:justify-center md:gap-10"
+>
+	<!-- Menu Item -->
+	<li>
+		<a class="menu-link group" href="#hero">
+			<span class="group-[.active]:text-[#c1d1f0]">Home</span>
+		</a>
+	</li>
+	<!-- Menu Item -->
+	<li>
+		<a class="menu-link group" href="#automate-section">
+			<span class="group-[.active]:text-[#c1d1f0]">Services</span>
+		</a>
+	</li>
+	<!-- Menu Item -->
+	<li>
+		<a class="menu-link group" href="#about-section">
+			<span class="group-[.active]:text-[#c1d1f0]">About Us</span>
+		</a>
+	</li>
+</ul>
+
+<!-- Active Home Link -->
+<section id="hero" class="relative flex flex-1 flex-col"></section>
+<!-- Active Services Link -->
+<section
+	id="automate-section"
+	class="section service-section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0F1320] bg-cover bg-center md:pt-0"
+></section>
+<!-- Active Services Link -->
+<section
+	id="teams-section"
+	class="section service-section relative flex h-full flex-col items-center justify-center overflow-hidden bg-teams-gradient bg-cover bg-center md:pt-0"
+></section>
+
+<!-- Active Services Link -->
+<section
+	id="error-section"
+	class="section service-section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#0E151E] bg-cover bg-center md:pt-0"
+></section>
+
+<!-- Active Services Link -->
+<section
+	id="partner-section"
+	class="bg-[rgba(105,61,83,0.10)] p-20 md:bg-transparent md:pt-0"
+></section>
+
+<!-- Active About Us Link -->
+<section
+	id="about-section"
+	class="section relative flex h-full flex-col items-center justify-center overflow-hidden bg-[#08141D] bg-cover bg-center md:pt-0"
+></section>
+
+Есть вот такой html. Нужно сделать что при прокрутке сайта пункт меню выделялся
+активным. Когда мы над section id="hero" то активным пункт меню должен быть
+первый - Home. Когда мы над секцциями: 1)section id="automate-section" 2)section
+id="teams-section" 3)section id="error-section" то активным толжен быть пункт
+меню Services Когда мы над секцией section id="about-section" то активным должен
+быть третий пункт - About Us

@@ -64,73 +64,43 @@ function fixedHeader() {
 }
 window.addEventListener('scroll', fixedHeader)
 
-// document.addEventListener('DOMContentLoaded', function () {
-// 	const menuLinks = document.querySelectorAll('#menu a')
-
-// 	window.addEventListener('scroll', function () {
-// 		const fromTop = window.scrollY
-
-// 		menuLinks.forEach(function (link) {
-// 			const section = document.querySelector(link.getAttribute('href'))
-// 			if (
-// 				section.offsetTop <= fromTop &&
-// 				section.offsetTop + section.offsetHeight > fromTop
-// 			) {
-// 				link.classList.add('active')
-// 			} else {
-// 				link.classList.remove('active')
-// 			}
-// 		})
-// 	})
-// })
-
 document.addEventListener('DOMContentLoaded', function () {
 	const menuLinks = document.querySelectorAll('#menu a')
-	let isInsideServiceSection = false
+	const sections = document.querySelectorAll('.section-wrapper')
 
 	window.addEventListener('scroll', function () {
 		const fromTop = window.scrollY
 
-		menuLinks.forEach(function (link, index) {
-			const sectionId = link.getAttribute('href').substring(1)
-			const section = document.getElementById(sectionId)
+		if (fromTop < 10) {
+			menuLinks.forEach((link) => link.classList.remove('active'))
+		}
 
-			// Устанавливаем активный класс для первой секции
+		sections.forEach(function (section, index) {
 			if (
-				index === 0 &&
-				section &&
 				fromTop >= section.offsetTop &&
 				fromTop < section.offsetTop + section.offsetHeight
 			) {
-				link.classList.add('active')
-				isInsideServiceSection = false // Сбрасываем флаг, чтобы не подсвечивать второй пункт меню
-			}
-			// Устанавливаем активный класс для второго пункта только если внутри секций с классом 'service-section'
-			else if (index === 1 && isInsideServiceSection) {
-				link.classList.add('active')
-			}
-			// Устанавливаем активный класс для последней секции
-			else if (
-				index === menuLinks.length - 1 &&
-				fromTop + window.innerHeight >= document.body.offsetHeight &&
-				section &&
-				fromTop >= section.offsetTop &&
-				fromTop < section.offsetTop + section.offsetHeight
-			) {
-				link.classList.add('active')
-				isInsideServiceSection = false // Сбрасываем флаг при достижении последней секции
-			} else {
-				link.classList.remove('active')
-			}
+				// Проверяем, находится ли прокрутка внутри текущей секции
+				activeSectionIndex = index
 
-			// Проверяем, находится ли прокрутка внутри секции с классом 'service-section'
-			if (
-				section &&
-				section.classList.contains('service-section') &&
-				fromTop >= section.offsetTop &&
-				fromTop < section.offsetTop + section.offsetHeight
-			) {
-				isInsideServiceSection = true
+				if (sections[index].classList.contains('section-wrapper-home')) {
+					menuLinks[0].classList.add('active')
+				} else {
+					menuLinks[0].classList.remove('active')
+				}
+				if (sections[index].classList.contains('section-wrapper-service')) {
+					menuLinks[1].classList.add('active')
+				} else {
+					menuLinks[1].classList.remove('active')
+				}
+				if (sections[index].classList.contains('section-wrapper-about')) {
+					menuLinks[2].classList.add('active')
+				} else {
+					menuLinks[2].classList.remove('active')
+				}
+				if (sections[index].classList.contains('section-wrapper-chat')) {
+					menuLinks[2].classList.remove('active')
+				}
 			}
 		})
 	})

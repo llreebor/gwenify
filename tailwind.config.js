@@ -34,6 +34,7 @@ module.exports = {
 			},
 			animation: {
 				fadeIn: 'fade-in .3s ease',
+				'bounce-slow': 'bounce 2s linear infinite',
 			},
 			backgroundImage: {
 				'automate-gradient':
